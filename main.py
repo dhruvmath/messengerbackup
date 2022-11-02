@@ -20,7 +20,7 @@ if __name__ == '__main__':
     #finding the MESSAGEs
 
     input('Waiting for you... Press enter')
-    tmp = browser.find_elements('xpath', '//div[@data-testid="solid-message-bubble"]')
+    tmp = browser.find_elements('xpath', '//div[@data-scope="messages_table"]')
     print([t.text for t in tmp])
 
     #Save messages in a good format
